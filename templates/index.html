@@ -1,14 +1,45 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+</style>
+
 <html>
     <head>
-        <title>Welcome!</title>
+        <title>Broadway Show Recommender!</title>
         <link rel="stylesheet" href="../static/css/style.css">
     </head>
     <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
-        </form>
+        <center><h1>Broadway Show Recommender</h1></center>
+        <p>Please enter your first name.</p>
+       
+    <form method = "post" action = "/results">
+      <input type="text" name="name" placeholder="Enter your name:"/>
+
+      <h3>Question 1:</h3>
+      <p>Which type of show would you like to see?</p>
+        <input type="radio" id="musical" name="show_type" value="Musical">
+        <label for="html">Musical</label><br>
+        <input type="radio" id="play" name="show_type" value="Play">
+        <label for="css">Play</label><br>
+
+      <h3>Question 2:</h3>
+      <p>Would you prefer to see a Broadway or Off-Broadway production?</p>
+        <input type="radio" id="broadway" name="show_location" value="Broadway">
+        <label for="html">Broadway</label><br>
+        <input type="radio" id="off-broadway" name="show_location" value="Off-Broadway">
+        <label for="css">Off-Broadway</label><br>
+
+      <h3>Question 3:</h3>
+      <p>What kind of show vibe are you seeking?</p>
+        <input type="radio" id="uplifting_funny" name="show_genre" value="Uplifting and Funny">
+        <label for="html">Uplifting and Funny</label><br>
+        <input type="radio" id="emotional_thought" name="show_genre" value="Emotional and Thought-Provoking">
+        <label for="css">Emotional and Thought-Provoking</label><br>
+      
+      <center><h4>Click below to submit your questionaire:</h4>
+        <input type="submit" value="Submit."/></center>
+      
+    </form>
+      
     </body>
 </html>

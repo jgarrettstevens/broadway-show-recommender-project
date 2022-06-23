@@ -1,7 +1,7 @@
 h1{
   font-family: 'Bebas Neue', cursive;
-  color: #e28743;
-  padding-top: 20px
+  color: #e28743
+
 }
 
 body{
@@ -19,8 +19,12 @@ label{
   font-family: 'Radio Canada', sans-serif;
 }
 
-h4{
+h2{
 font-family: 'Bebas Neue', cursive;
 color: #1e81b0
+}
+
+a{
+  color: #76b5c5
 
 }
